@@ -1,0 +1,95 @@
+#camera 19.0 19.0 19.0   -1.0 -1.0 -1.0   -1.0 1.0 -1.0   .523  
+#background 0.2 0.2 0.2
+#ambient 0.5 0.5 0.5 
+#ray_file_num 3
+#ray_file unitchair.ray
+#ray_file unittable.ray
+#ray_file room.ray
+#light_num 4
+#light_point
+	 1.0  1.0  1.0
+	15.0 15.0  15.0
+	1 0 0
+#light_point
+	 1.0  1.0  1.0
+	-15.0 15.0  15.0
+	1 0 0
+#light_point
+	 1.0  1.0  1.0
+	-15.0 15.0  -15.0
+	1 0 0
+#light_point
+	 1.0  1.0  1.0
+	15.0 15.0  -15.0
+	1 0 0
+	
+	
+	
+#group_begin
+	 5.0 0.0 0.0 0.0
+	 0.0 8.0 0.0 4.0
+	 0.0 0.0 5.0 -10.0
+	 0.0 0.0 0.0 1.0
+	#ray_file_instance 0
+#group_end
+#group_begin
+-1.0    0       0       0
+0       1       0       0
+0       0       -1.0    0
+0       0       0       1
+#group_begin
+	 5.0 0.0 0.0 0.0
+	 0.0 8.0 0.0 4.0
+	 0.0 0.0 5.0 -10.0
+	 0.0 0.0 0.0 1.0
+	#ray_file_instance 0
+#group_end
+#group_end
+
+#group_begin
+0       0       1.0     0
+0       1       0       0
+-1.0    0       0       0
+0       0       0       1
+#group_begin
+	 5.0 0.0 0.0 0.0
+	 0.0 8.0 0.0 4.0
+	 0.0 0.0 5.0 -10.0
+	 0.0 0.0 0.0 1.0
+	#ray_file_instance 0
+#group_end
+#group_begin
+-1.0    0       0       0
+0       1       0       0
+0       0       -1.0    0
+0       0       0       1
+#group_begin
+	 5.0 0.0 0.0 0.0
+	 0.0 8.0 0.0 4.0
+	 0.0 0.0 5.0 -10.0
+	 0.0 0.0 0.0 1.0
+	#ray_file_instance 0
+#group_end
+#group_end
+#group_end
+
+
+#group_begin
+10.0 0.0 0.0 0.0
+0.0 6.0 0.0 2.5
+0.0 0.0 10.0 0.0
+0.0 0.0 0.0 1.0
+#ray_file_instance 1
+#group_end
+#group_begin
+1.0 0.0 0.0 0.0
+0.0 1.0 0.0 0.5
+0.0 0.0 1.0 0.0
+0.0 0.0 0.0 1.0
+#ray_file_instance 2
+#group_end
+
+
+
+
+

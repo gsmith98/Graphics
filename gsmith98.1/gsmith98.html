@@ -1,0 +1,258 @@
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+</style>
+
+<h1>Graham Smith (gsmith98)</h1>
+<h2>Graphics HW1</h2>
+<p>This assignment was written in Microsoft Visual Studio Community 2015 On a Windows 7 Ultimate (x64) machine. From what I can tell from the info panel, this means I was using Visual C++ 2015. According to <a href="http://stackoverflow.com/questions/1233312/finding-version-of-microsoft-c-compiler-from-command-line-for-makefiles">this post</a>, that means I was compiling with Microsoft (R) C/C++ Optimizing Compiler Version 19.XX.YYYYY for x64. I have tested that I was able to compile and run my submission by opening the .sln and using Visual Studio's "Build -> Build Solution", exactly the same way the code skeleton provided to us can be built.</p>
+<p>0 late days used</p>
+<p>Every function listed on <a href="http://www.cs.jhu.edu/~misha/Fall16/Assignments/Assignment1/">the assignment page</a> has been fully implemented up to and including RotateGaussian. I am additionally submitting a few art contest entrants. The HTML to follow was taken from the provided example image processing results page, but all the jpeg images shown have been produced by my own code from the source bmp's. If there is any issue with this submission, please let me know and I can work with you to remedy it.</p>
+
+<UL>
+<LI><B>Noise</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="gsmith98_HTML/yoda.noisy.0.jpeg" width=200></TD>
+<TD><IMG SRC="gsmith98_HTML/yoda.noisy.1.jpeg" width=200></TD>
+<TD><IMG SRC="gsmith98_HTML/yoda.noisy.5.jpeg" width=200></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>--noisify 0</TD>
+<TD ALIGN="CENTER"><CODE>--noisify .1</TD>
+<TD ALIGN="CENTER"><CODE>--noisify .5</TD>
+</TR>
+</TABLE>
+</LI>
+
+<LI><B>Brightness</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="gsmith98_HTML/yoda.brighten.5.jpeg" width=200></TD>
+<TD><IMG SRC="gsmith98_HTML/yoda.brighten.1.jpeg" width=200></TD>
+<TD><IMG SRC="gsmith98_HTML/yoda.brighten.2.jpeg" width=200></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>--brighten .5</TD>
+<TD ALIGN="CENTER"><CODE>--brighten 1</TD>
+<TD ALIGN="CENTER"><CODE>--brighten 2</TD>
+</TR>
+</TABLE>
+</LI>
+
+<LI><B>Luminance</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="gsmith98_HTML/yoda.gray.jpeg" width=200></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>--gray</TD>
+</TR>
+</TABLE>
+</LI>
+
+<LI><B>Contrast</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="gsmith98_HTML/shrek.contrast.5.jpeg" width=300></TD>
+<TD><IMG SRC="gsmith98_HTML/shrek.contrast.1.jpeg" width=300></TD>
+<TD><IMG SRC="gsmith98_HTML/shrek.contrast.2.jpeg" width=300></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>--contrast .5</TD>
+<TD ALIGN="CENTER"><CODE>--contrast 1</TD>
+<TD ALIGN="CENTER"><CODE>--contrast 2</TD>
+</TR>
+</TABLE>
+</LI>
+
+<LI><B>Saturataion</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="gsmith98_HTML/shrek.saturate.5.jpeg" width=300></TD>
+<TD><IMG SRC="gsmith98_HTML/shrek.saturate.1.jpeg" width=300></TD>
+<TD><IMG SRC="gsmith98_HTML/shrek.saturate.2.jpeg" width=300></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>--saturate .5</TD>
+<TD ALIGN="CENTER"><CODE>--saturate 1</TD>
+<TD ALIGN="CENTER"><CODE>--saturate 2</TD>
+</TR>
+</TABLE>
+</LI>
+
+<LI><B>Crop</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="gsmith98_HTML/shrek.crop.jpeg" width=100></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>--crop 100 100 200 200</TD>
+</TR>
+</TABLE>
+</LI>
+
+<LI><B>Quantization</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="gsmith98_HTML/ramp.quantize.1.jpeg" width=255></TD>
+<TD><IMG SRC="gsmith98_HTML/ramp.quantize.2.jpeg" width=255></TD>
+<TD><IMG SRC="gsmith98_HTML/ramp.quantize.4.jpeg" width=255></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>--quantize 1</TD>
+<TD ALIGN="CENTER"><CODE>--quantize 2</TD>
+<TD ALIGN="CENTER"><CODE>--quantize 4</TD>
+</TR>
+</TABLE>
+</LI>
+
+<LI><B>Random Dither</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="gsmith98_HTML/ramp.rDither.1.jpeg" width=255></TD>
+<TD><IMG SRC="gsmith98_HTML/ramp.rDither.2.jpeg" width=255></TD>
+<TD><IMG SRC="gsmith98_HTML/ramp.rDither.4.jpeg" width=255></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>--rDither 1</TD>
+<TD ALIGN="CENTER"><CODE>--rDither 2</TD>
+<TD ALIGN="CENTER"><CODE>--rDither 4</TD>
+</TR>
+</TABLE>
+</LI>
+
+<LI><B>Ordered Dither</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="gsmith98_HTML/ramp.oDither.1.jpeg" width=255></TD>
+<TD><IMG SRC="gsmith98_HTML/ramp.oDither.2.jpeg" width=255></TD>
+<TD><IMG SRC="gsmith98_HTML/ramp.oDither.4.jpeg" width=255></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>--oDither2x2 1</TD>
+<TD ALIGN="CENTER"><CODE>--oDither2x2 2</TD>
+<TD ALIGN="CENTER"><CODE>--oDither2x2 4</TD>
+</TR>
+</TABLE>
+</LI>
+
+<LI><B>Floyd-Steinberg Dither</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="gsmith98_HTML/ramp.fsDither.1.jpeg" width=255></TD>
+<TD><IMG SRC="gsmith98_HTML/ramp.fsDither.2.jpeg" width=255></TD>
+<TD><IMG SRC="gsmith98_HTML/ramp.fsDither.4.jpeg" width=255></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>--fsDither 1</TD>
+<TD ALIGN="CENTER"><CODE>--fsDither 2</TD>
+<TD ALIGN="CENTER"><CODE>--fsDither 4</TD>
+</TR>
+</TABLE>
+</LI>
+
+<LI><B>Blurring</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="gsmith98_HTML/sully.blur.jpeg" width=295></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>--blur3x3</TD>
+</TR>
+</TABLE>
+</LI>
+
+<LI><B>Edge Detection</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="gsmith98_HTML/sully.edge.jpeg" width=295></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>--edges3x3</TD>
+</TR>
+</TABLE>
+</LI>
+
+<LI><B>Scaling (Nearest Sample)</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="gsmith98_HTML/stripe.scaleN.7.jpeg" width=140></TD>
+<TD><IMG SRC="gsmith98_HTML/stripe.scaleN.1.jpeg" width=200></TD>
+<TD><IMG SRC="gsmith98_HTML/stripe.scaleN.13.jpeg" width=260></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>--scaleNearest .7</TD>
+<TD ALIGN="CENTER"><CODE>--scaleNearest 1</TD>
+<TD ALIGN="CENTER"><CODE>--scaleNearest 1.3</TD>
+</TR>
+</TABLE>
+</LI>
+
+<LI><B>Scaling (Bilinear Sample)</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="gsmith98_HTML/stripe.scaleB.7.jpeg" width=140></TD>
+<TD><IMG SRC="gsmith98_HTML/stripe.scaleB.1.jpeg" width=200></TD>
+<TD><IMG SRC="gsmith98_HTML/stripe.scaleB.13.jpeg" width=260></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>--scaleBilinear .7</TD>
+<TD ALIGN="CENTER"><CODE>--scaleBilinear 1</TD>
+<TD ALIGN="CENTER"><CODE>--scaleBilinear 1.3</TD>
+</TR>
+</TABLE>
+</LI>
+
+<LI><B>Scaling (Gaussian Sample)</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="gsmith98_HTML/stripe.scaleG.7.jpeg" width=140></TD>
+<TD><IMG SRC="gsmith98_HTML/stripe.scaleG.1.jpeg" width=200></TD>
+<TD><IMG SRC="gsmith98_HTML/stripe.scaleG.13.jpeg" width=260></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>--scaleGaussian .7</TD>
+<TD ALIGN="CENTER"><CODE>--scaleGaussian 1</TD>
+<TD ALIGN="CENTER"><CODE>--scaleGaussian 1.3</TD>
+</TR>
+</TABLE>
+</LI>
+
+<LI><B>Rotation</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="gsmith98_HTML/stripe.rotateN.30.jpeg" width=274></TD>
+<TD><IMG SRC="gsmith98_HTML/stripe.rotateB.30.jpeg" width=274></TD>
+<TD><IMG SRC="gsmith98_HTML/stripe.rotateG.30.jpeg" width=274></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>--rotateNearest 30</TD>
+<TD ALIGN="CENTER"><CODE>--rotateBilinear 30</TD>
+<TD ALIGN="CENTER"><CODE>--rotateGaussian 30</TD>
+</TR>
+</TABLE>
+</LI>
+
+<LI><B>Art</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="gsmith98_HTML/gsmith98.art.1.bmp" width=255></TD>
+<TD><IMG SRC="gsmith98_HTML/gsmith98.art.2.bmp" width=255></TD>
+<TD><IMG SRC="gsmith98_HTML/gsmith98.art.3.bmp" width=255></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>"RedRandBand"</TD>
+<TD ALIGN="CENTER"><CODE>"Crimson Wyvern"</TD>
+<TD ALIGN="CENTER"><CODE>"Prisma Comb"</TD>
+</TR>
+</TABLE>
+</LI>
+
+</UL>

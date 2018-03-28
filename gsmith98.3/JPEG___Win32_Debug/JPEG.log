@@ -1,0 +1,63 @@
+﻿  jutils.cpp
+  jquant2.cpp
+  jquant1.cpp
+  jmemnobs.cpp
+  jmemmgr.cpp
+c:\users\graham\desktop\graphics\assignment 2\jpeg\jmemmgr.cpp(1106): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdlib.h(1183): note: see declaration of 'getenv'
+c:\users\graham\desktop\graphics\assignment 2\jpeg\jmemmgr.cpp(1109): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(2254): note: see declaration of 'sscanf'
+  jidctred.cpp
+  jidctint.cpp
+  jidctfst.cpp
+  jidctflt.cpp
+  jfdctint.cpp
+  jfdctfst.cpp
+  jfdctflt.cpp
+  jerror.cpp
+c:\users\graham\desktop\graphics\assignment 2\jpeg\jerror.cpp(193): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+c:\users\graham\desktop\graphics\assignment 2\jpeg\jerror.cpp(195): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+  jdtrans.cpp
+  jdsample.cpp
+  jdpostct.cpp
+  jdphuff.cpp
+  jdmerge.cpp
+  jdmaster.cpp
+  jdmarker.cpp
+  Generating Code...
+  Compiling...
+  jdmainct.cpp
+  jdinput.cpp
+  jdhuff.cpp
+  jddctmgr.cpp
+  jdcolor.cpp
+  jdcoefct.cpp
+  jdatasrc.cpp
+  jdatadst.cpp
+  jdapistd.cpp
+  jdapimin.cpp
+  jctrans.cpp
+  jcsample.cpp
+  jcprepct.cpp
+  jcphuff.cpp
+  jcparam.cpp
+  jcomapi.cpp
+  jcmaster.cpp
+  jcmarker.cpp
+  jcmainct.cpp
+  jcinit.cpp
+  Generating Code...
+  Compiling...
+  jchuff.cpp
+  jcdctmgr.cpp
+  jccolor.cpp
+  jccoefct.cpp
+  jcapistd.cpp
+  jcapimin.cpp
+  ckconfig.cpp
+c:\users\graham\desktop\graphics\assignment 2\jpeg\ckconfig.cpp(297): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+  Generating Code...
+  JPEG.vcxproj -> C:\Users\Graham\Desktop\Graphics\Assignment 2\.\JPEG___Win32_Debug\JPEG.lib

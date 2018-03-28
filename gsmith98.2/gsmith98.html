@@ -1,0 +1,89 @@
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+</style>
+
+<h1>Graham Smith (gsmith98)</h1>
+<h2>Graphics HW2</h2>
+<p>This assignment was written in Microsoft Visual Studio Community 2015 On a Windows 7 Ultimate (x64) machine. From what I can tell from the info panel, this means I was using Visual C++ 2015. According to <a href="http://stackoverflow.com/questions/1233312/finding-version-of-microsoft-c-compiler-from-command-line-for-makefiles">this post</a>, that means I was compiling with Microsoft (R) C/C++ Optimizing Compiler Version 19.XX.YYYYY for x64. I have tested that I was able to compile and run my submission by opening the .sln and using Visual Studio's "Build -> Build Solution", exactly the same way the code skeleton provided to us can be built.</p>
+<p>2 late days used</p>
+<p>Every function listed on <a href="http://www.cs.jhu.edu/~misha/Fall16/Assignments/Assignment2/">the assignment page</a> has been fully implemented up to and including the 5 Accelerated Ray tracing points, and with the addition of RayBox intersect. I am additionally submitting a few images and one ray file (which also satisfies the conditions for the 1 point "Generate a 3D scene...") to the art contest. All the images shown below have been produced by my own code from ray files. If there is any issue with this submission, please let me know and I can work with you to remedy it.</p>
+
+<UL>
+<LI><B>Reference</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="gsmith98_HTML/completedreference.bmp" width=200></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>test.ray (reference version)</TD>
+</TR>
+</TABLE>
+</LI>
+This image encapsulates all the working steps covered by <a href="http://www.cs.jhu.edu/~misha/Fall16/Assignments/Assignment2/progress.html">the reference progress page</a>. To reproduce the image above with my code, there are 3 lines in rayScene.todo.cpp that you will need to uncomment (they are each labeled with an "uncomment this" comment). This is because implementations I made beyond the reference changed the way test.ray would be drawn. You can see my explanation in <a href="https://piazza.com/class/iskorfzm1dx26s?cid=68">this Piazza post</a>.<br><br>
+
+<LI><B>test.ray</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="gsmith98_HTML/changed.bmp" width=200></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>test.ray (changed version)</TD>
+</TR>
+</TABLE>
+</LI>
+The changes here are: refraction added, background considered for reflection/refraction, transparency being treated as a weighted average. I agree with all these changes (again, see Piazza post), especially when you consider the difference made on the butterfly image:<br><br>
+
+
+<LI><B>Butterfly at the Lake</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="gsmith98_HTML/butterflyoriginal.bmp" width=300></TD>
+<TD><IMG SRC="gsmith98_HTML/butterflybest.bmp" width=300></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>butterfly (reference version)</TD>
+<TD ALIGN="CENTER"><CODE>butterfly (changed version)</TD>
+</TR>
+</TABLE>
+</LI>
+Look closely at the wings to see the differences my changes were meant to address. The better butterfly is my submission to the ray art contest, and it also satisfies: "(1) Generate a 3D scene and save it as a .ray file. The scene should have both spheres and triangles, should have all three types of light sources in it, and should contain at least one primitive with a transparent material." I wrote python code to help me create this ray file that I included with my submission as "raymaker.py".<br><br>
+
+<LI><B>Box</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="gsmith98_HTML/redbox.bmp" width=200></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>boxtest.ray</TD>
+</TR>
+</TABLE>
+</LI>
+Working box intersect (and bounding box).<br>
+<br>
+Accelerated ray tracing is also implemented, though there is no visual difference to show here.<br>
+<br>
+
+
+<LI><B>Art</B>: 
+<TABLE BORDER=1>
+<TR>
+<TD><IMG SRC="gsmith98_HTML/gsmith98.art.1.bmp" width=255></TD>
+<TD><IMG SRC="gsmith98_HTML/gsmith98.art.2.bmp" width=255></TD>
+<TD><IMG SRC="gsmith98_HTML/gsmith98.art.3.bmp" width=255></TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER"><CODE>"MouseRise"</TD>
+<TD ALIGN="CENTER"><CODE>"Subcontinental"</TD>
+<TD ALIGN="CENTER"><CODE>"Eyeball"</TD>
+</TR>
+</TABLE>
+</LI>
+
+</UL>

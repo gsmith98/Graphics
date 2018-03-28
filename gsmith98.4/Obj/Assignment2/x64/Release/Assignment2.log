@@ -1,0 +1,49 @@
+﻿  rayBox.cpp
+  rayBox.todo.cpp
+  rayCone.cpp
+  rayCone.todo.cpp
+  rayCylinder.cpp
+  rayCylinder.todo.cpp
+  rayDirectionalLight.cpp
+  rayDirectionalLight.todo.cpp
+Ray\rayDirectionalLight.todo.cpp(55): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+Ray\rayDirectionalLight.todo.cpp(56): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+  rayFileInstance.cpp
+  rayGroup.cpp
+  rayGroup.todo.cpp
+  rayKey.cpp
+  rayPointLight.cpp
+  rayPointLight.todo.cpp
+Ray\rayPointLight.todo.cpp(60): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+Ray\rayPointLight.todo.cpp(61): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+Ray\rayPointLight.todo.cpp(65): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+Ray\rayPointLight.todo.cpp(66): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+Ray\rayPointLight.todo.cpp(67): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+  rayScene.cpp
+  rayScene.todo.cpp
+Ray\rayScene.todo.cpp(117): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+Ray\rayScene.todo.cpp(119): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+Ray\rayScene.todo.cpp(121): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+Ray\rayScene.todo.cpp(123): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+Ray\rayScene.todo.cpp(125): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+  raySphere.cpp
+  raySphere.todo.cpp
+  raySpotLight.cpp
+  raySpotLight.todo.cpp
+Ray\raySpotLight.todo.cpp(66): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+Ray\raySpotLight.todo.cpp(67): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+Ray\raySpotLight.todo.cpp(71): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+Ray\raySpotLight.todo.cpp(72): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+Ray\raySpotLight.todo.cpp(73): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+Ray\raySpotLight.todo.cpp(77): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+Ray\raySpotLight.todo.cpp(79): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+Ray\raySpotLight.todo.cpp(81): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+  Generating Code...
+  Compiling...
+  rayTriangle.cpp
+  rayTriangle.todo.cpp
+  rayWindow.cpp
+  main.cpp
+  Generating Code...
+  Assignment2.vcxproj -> C:\Users\Graham\Desktop\Graphics\Assignment 4\x64\Release\Assignment2.exe
+  Assignment2.vcxproj -> .\Assignment2_Release/Assignment2.pdb (Full PDB)
